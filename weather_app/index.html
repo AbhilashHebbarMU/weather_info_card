@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Info Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-logo">WEATHER</div>
+    <form class="search-bar" role="search" aria-label="Search city" id="search-form">
+      <input type="text" placeholder="Enter a city" aria-label="City" />
+      <button type="submit"><span aria-hidden="true">🔍</span></button>
+    </form>
+    <nav class="main-nav"></nav>
+  </header>
+  <div id="site-clock" class="floating-clock" aria-label="Current time" tabindex="0"></div>
+  <main>
+    <div class="wrap">
+      <div id="card" class="card sunny">
+        <div class="card-inner">
+          <div class="left">
+            <div class="location" id="location">Loading...</div>
+            <div class="temp" id="temp">--°C</div>
+            <div class="condition" id="condition">—</div>
+            <div class="details"><span id="humidity"></span> • <span id="wind"></span></div>
+          </div>
+          <div class="right">
+            <div class="icon" id="icon">☀️</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="refresh" aria-label="Refresh weather">Refresh</button>
+          <button id="theme-toggle" aria-label="Switch dark/light mode">🌙</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-info" role="contentinfo">
+    <p>&copy; 2025. this is a Demo project done <br> by ABHILASH HEBBAR M U <br> Not affiliated with other weather sites.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
